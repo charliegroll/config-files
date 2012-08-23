@@ -5,8 +5,7 @@ export EDITOR='which vi'
 PS1='\[\e[32m\][\A]:\[\e[31m\]\W$ \[\e[0m\]'
 
 # Aliases
+alias ls="ls -G"
 alias la='ls -la'
-
-# Execute subshell script
-source ~/.bash_profile
-
+alias profile="vi ~/.bash_profile"
+alias profilesource="source ~/.bash_profile"
