@@ -132,6 +132,9 @@
         "" Remove trailing whitespaces and ^M chars
         autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
+        "add lesscss coloring
+        au BufNewFile,BufRead *.less set filetype=less
+
         " Set autowrite             " automatically write a file when leaving a modified buffer
         set history=2000            " Store a ton of history (default is 20)
         " set spell                   " spell checking on

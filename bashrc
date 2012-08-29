@@ -1,6 +1,11 @@
 # Environment variables
 export EDITOR='vi'
 
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs 
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
 # Prompt
 PS1='\[\e[32m\][\A]:\[\e[31m\]\W$ \[\e[0m\]'
 
